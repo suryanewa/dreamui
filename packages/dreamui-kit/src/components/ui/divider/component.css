@@ -1,0 +1,35 @@
+.divider {
+  border: none;
+  background: var(--color-border-primary);
+}
+
+.divider[data-orientation="horizontal"] {
+  width: 100%;
+  height: 1px;
+  margin: var(--space-4) 0;
+}
+
+.divider[data-orientation="vertical"] {
+  width: 1px;
+  height: 100%;
+  margin: 0 var(--space-4);
+}
+
+.divider[data-spacing="sm"][data-orientation="horizontal"] { margin: var(--space-2) 0; }
+.divider[data-spacing="lg"][data-orientation="horizontal"] { margin: var(--space-6) 0; }
+.divider[data-spacing="sm"][data-orientation="vertical"] { margin: 0 var(--space-2); }
+.divider[data-spacing="lg"][data-orientation="vertical"] { margin: 0 var(--space-6); }
+
+.divider--with-text {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.divider--with-text::before,
+.divider--with-text::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--color-border-primary);
+}

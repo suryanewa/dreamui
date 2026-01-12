@@ -1,0 +1,15 @@
+{
+  "name": "card",
+  "description": "A card container for grouping related content",
+  "version": "1.0.0",
+  "category": "ui",
+  "tags": ["container", "surface", "panel"],
+  "props": [
+    { "name": "variant", "type": "string", "values": ["elevated", "outlined", "filled"], "default": "elevated" },
+    { "name": "padding", "type": "string", "values": ["none", "sm", "md", "lg"], "default": "md" },
+    { "name": "hoverable", "type": "boolean", "default": false }
+  ],
+  "attributes": ["data-variant", "data-padding", "data-hoverable"],
+  "accessibility": { "role": "article" },
+  "examples": ["elevated", "outlined", "hoverable", "with-header"]
+}

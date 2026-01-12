@@ -1,0 +1,14 @@
+{
+  "name": "surface",
+  "description": "Surface component for elevated content areas",
+  "version": "1.0.0",
+  "category": "layout",
+  "tags": ["surface", "card", "elevated"],
+  "props": [
+    { "name": "elevation", "type": "number", "values": [0, 1, 2, 3], "default": 1 },
+    { "name": "padding", "type": "string", "values": ["none", "sm", "md", "lg"], "default": "md" }
+  ],
+  "attributes": ["data-elevation", "data-padding"],
+  "accessibility": {},
+  "examples": ["elevations", "with-padding"]
+}

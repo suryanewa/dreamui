@@ -1,0 +1,15 @@
+{
+  "name": "hero",
+  "description": "Hero section component for page headers",
+  "version": "1.0.0",
+  "category": "layout",
+  "tags": ["hero", "header", "banner"],
+  "props": [
+    { "name": "size", "type": "string", "values": ["sm", "md", "lg", "xl"], "default": "lg" },
+    { "name": "align", "type": "string", "values": ["center", "left", "right"], "default": "center" },
+    { "name": "background", "type": "string", "description": "Background component" }
+  ],
+  "attributes": ["data-size", "data-align"],
+  "accessibility": { "role": "banner" },
+  "examples": ["centered", "with-background", "with-actions"]
+}

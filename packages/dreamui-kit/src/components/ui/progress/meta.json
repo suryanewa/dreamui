@@ -1,0 +1,17 @@
+{
+  "name": "progress",
+  "description": "Progress bar for displaying completion status",
+  "version": "1.0.0",
+  "category": "ui",
+  "tags": ["progress", "bar", "indicator"],
+  "props": [
+    { "name": "value", "type": "number", "description": "Current value" },
+    { "name": "min", "type": "number", "default": 0 },
+    { "name": "max", "type": "number", "default": 100 },
+    { "name": "size", "type": "string", "values": ["sm", "md", "lg"], "default": "md" },
+    { "name": "variant", "type": "string", "values": ["default", "success", "error"], "default": "default" }
+  ],
+  "attributes": ["value", "max", "data-size", "data-variant"],
+  "accessibility": { "role": "progressbar", "aria-valuenow": "value", "aria-valuemin": "min", "aria-valuemax": "max" },
+  "examples": ["default", "sized", "success", "error"]
+}

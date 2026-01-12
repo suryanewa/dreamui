@@ -1,0 +1,15 @@
+{
+  "name": "badge",
+  "description": "A badge component for labels, status indicators, and counts",
+  "version": "1.0.0",
+  "category": "ui",
+  "tags": ["label", "status", "indicator"],
+  "props": [
+    { "name": "variant", "type": "string", "values": ["default", "primary", "success", "warning", "error", "info"], "default": "default" },
+    { "name": "size", "type": "string", "values": ["sm", "md", "lg"], "default": "md" },
+    { "name": "dot", "type": "boolean", "default": false, "description": "Show status dot" }
+  ],
+  "attributes": ["data-variant", "data-size", "data-dot"],
+  "accessibility": { "role": "status", "aria": {} },
+  "examples": ["default", "with-dot", "sizes", "variants"]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "data-list",
+  "description": "Data list component for key-value pairs",
+  "version": "1.0.0",
+  "category": "ui",
+  "tags": ["data-list", "description", "key-value"],
+  "props": [
+    { "name": "items", "type": "array", "description": "Key-value pairs" },
+    { "name": "variant", "type": "string", "values": ["plain", "bordered"], "default": "plain" }
+  ],
+  "attributes": ["data-variant", "role"],
+  "accessibility": { "role": "list" },
+  "examples": ["basic", "bordered", "with-actions"]
+}

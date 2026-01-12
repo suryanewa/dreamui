@@ -1,0 +1,75 @@
+.switch {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  cursor: pointer;
+}
+
+.switch__track {
+  position: relative;
+  background: var(--color-bg-tertiary);
+  border: 2px solid var(--color-border-primary);
+  border-radius: var(--radius-full);
+  transition: var(--transition-fast);
+}
+
+.switch[data-size="sm"] .switch__track {
+  width: 36px;
+  height: 20px;
+}
+
+.switch[data-size="md"] .switch__track {
+  width: 44px;
+  height: 24px;
+}
+
+.switch[data-size="lg"] .switch__track {
+  width: 52px;
+  height: 28px;
+}
+
+.switch__thumb {
+  position: absolute;
+  top: 2px;
+  background: var(--color-fg-tertiary);
+  border-radius: 50%;
+  transition: var(--transition-fast);
+  box-shadow: var(--shadow-sm);
+}
+
+.switch[data-size="sm"] .switch__thumb {
+  width: 14px;
+  height: 14px;
+  left: 2px;
+}
+
+.switch[data-size="md"] .switch__thumb {
+  width: 18px;
+  height: 18px;
+  left: 2px;
+}
+
+.switch[data-size="lg"] .switch__thumb {
+  width: 22px;
+  height: 22px;
+  left: 2px;
+}
+
+.switch__input:checked + .switch__track {
+  background: var(--color-fg-accent);
+  border-color: var(--color-fg-accent);
+}
+
+.switch__input:checked + .switch__track .switch__thumb {
+  background: white;
+  transform: translateX(100%);
+}
+
+.switch__input:focus-visible + .switch__track {
+  box-shadow: var(--focus-ring);
+}
+
+.switch__input:disabled + .switch__track {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

@@ -1,0 +1,13 @@
+{
+  "name": "input-group",
+  "description": "Input group for combining inputs with other elements",
+  "version": "1.0.0",
+  "category": "forms",
+  "tags": ["input-group", "form", "group"],
+  "props": [
+    { "name": "orientation", "type": "string", "values": ["horizontal", "vertical"], "default": "horizontal" }
+  ],
+  "attributes": ["data-orientation"],
+  "accessibility": {},
+  "examples": ["basic", "vertical", "with-button"]
+}

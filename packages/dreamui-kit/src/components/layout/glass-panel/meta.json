@@ -1,0 +1,14 @@
+{
+  "name": "glass-panel",
+  "description": "Glassmorphism panel component",
+  "version": "1.0.0",
+  "category": "layout",
+  "tags": ["glass", "glassmorphism", "backdrop", "blur"],
+  "props": [
+    { "name": "intensity", "type": "string", "values": ["low", "medium", "high"], "default": "medium" },
+    { "name": "padding", "type": "string", "values": ["sm", "md", "lg"], "default": "md" }
+  ],
+  "attributes": ["data-intensity", "data-padding"],
+  "accessibility": {},
+  "examples": ["intensities", "with-content"]
+}

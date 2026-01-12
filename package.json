@@ -1,0 +1,47 @@
+{
+  "name": "dreamui",
+  "version": "0.0.0",
+  "private": true,
+  "description": "A comprehensive UI system with vanilla components and React wrappers",
+  "author": "DreamUI Team <developer@dreamui.dev>",
+  "license": "MIT",
+  "keywords": [
+    "ui",
+    "components",
+    "design-system",
+    "vanilla",
+    "react",
+    "accessibility"
+  ],
+  "homepage": "https://dreamui.dev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dreamui/dreamui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dreamui/dreamui/issues"
+  },
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "pnpm -r run dev",
+    "build": "pnpm -r run build",
+    "lint": "pnpm -r run lint",
+    "format": "pnpm -r run format",
+    "test": "pnpm -r run test",
+    "check": "pnpm -r run check",
+    "clean": "pnpm -r run clean",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.12",
+    "husky": "^9.1.7",
+    "prettier": "^3.5.0"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  }
+}

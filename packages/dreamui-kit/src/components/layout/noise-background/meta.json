@@ -1,0 +1,14 @@
+{
+  "name": "noise-background",
+  "description": "Noise texture background component",
+  "version": "1.0.0",
+  "category": "layout",
+  "tags": ["background", "noise", "texture", "grain"],
+  "props": [
+    { "name": "opacity", "type": "number", "default": 0.03 },
+    { "name": "variant", "type": "string", "values": ["subtle", "medium", "heavy"], "default": "subtle" }
+  ],
+  "attributes": ["data-opacity", "data-variant"],
+  "accessibility": {},
+  "examples": ["subtle", "medium", "overlay"]
+}

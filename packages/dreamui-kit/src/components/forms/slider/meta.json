@@ -1,0 +1,17 @@
+{
+  "name": "slider",
+  "description": "Slider/range input component",
+  "version": "1.0.0",
+  "category": "forms",
+  "tags": ["slider", "range", "input", "form"],
+  "props": [
+    { "name": "min", "type": "number", "default": 0 },
+    { "name": "max", "type": "number", "default": 100 },
+    { "name": "value", "type": "number", "default": 50 },
+    { "name": "step", "type": "number", "default": 1 },
+    { "name": "disabled", "type": "boolean", "default": false }
+  ],
+  "attributes": ["min", "max", "value", "step", "disabled"],
+  "accessibility": { "role": "slider", "aria-valuenow": "value", "aria-valuemin": "min", "aria-valuemax": "max" },
+  "examples": ["basic", "with-labels", "disabled"]
+}

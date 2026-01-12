@@ -1,0 +1,14 @@
+{
+  "name": "error-state",
+  "description": "Error state component for displaying errors",
+  "version": "1.0.0",
+  "category": "ui",
+  "tags": ["error", "state", "failure"],
+  "props": [
+    { "name": "title", "type": "string", "default": "Something went wrong" },
+    { "name": "message", "type": "string" },
+    { "name": "action", "type": "string", "description": "Retry button text" }
+  ],
+  "accessibility": { "role": "alert" },
+  "examples": ["basic", "with-details", "with-retry"]
+}

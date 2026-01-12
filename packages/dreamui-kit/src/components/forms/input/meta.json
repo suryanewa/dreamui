@@ -1,0 +1,18 @@
+{
+  "name": "input",
+  "description": "Text input component",
+  "version": "1.0.0",
+  "category": "forms",
+  "tags": ["input", "text", "form", "textfield"],
+  "props": [
+    { "name": "type", "type": "string", "values": ["text", "email", "password", "number", "tel", "url", "search"], "default": "text" },
+    { "name": "placeholder", "type": "string" },
+    { "name": "value", "type": "string" },
+    { "name": "disabled", "type": "boolean", "default": false },
+    { "name": "readonly", "type": "boolean", "default": false },
+    { "name": "size", "type": "string", "values": ["sm", "md", "lg"], "default": "md" }
+  ],
+  "attributes": ["type", "placeholder", "value", "disabled", "readonly", "data-size"],
+  "accessibility": { "role": "textbox", "aria-invalid": "error" },
+  "examples": ["basic", "sizes", "states", "with-icon"]
+}

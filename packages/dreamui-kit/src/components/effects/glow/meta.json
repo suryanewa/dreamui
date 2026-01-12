@@ -1,0 +1,15 @@
+{
+  "name": "glow",
+  "description": "Glow effect component",
+  "version": "1.0.0",
+  "category": "effects",
+  "tags": ["glow", "effect", "light", "shadow"],
+  "props": [
+    { "name": "intensity", "type": "string", "values": ["low", "medium", "high"], "default": "medium" },
+    { "name": "color", "type": "string", "default": "var(--color-fg-accent)" },
+    { "name": "animated", "type": "boolean", "default": true }
+  ],
+  "attributes": ["data-intensity", "data-color", "data-animated"],
+  "accessibility": {},
+  "examples": ["static", "pulsing", "colors"]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "toast",
+  "description": "Toast notification component for temporary messages",
+  "version": "1.0.0",
+  "category": "ui",
+  "tags": ["notification", "alert", "snackbar"],
+  "props": [
+    { "name": "variant", "type": "string", "values": ["default", "success", "error", "warning"], "default": "default" },
+    { "name": "duration", "type": "number", "description": "Display duration in ms", "default": 5000 },
+    { "name": "title", "type": "string" },
+    { "name": "message", "type": "string" }
+  ],
+  "attributes": ["data-variant", "role", "aria-live"],
+  "accessibility": { "role": "alert", "aria-live": "polite" },
+  "examples": ["default", "success", "error", "with-action"]
+}

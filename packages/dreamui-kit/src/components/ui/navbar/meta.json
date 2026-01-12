@@ -1,0 +1,14 @@
+{
+  "name": "navbar",
+  "description": "Navigation bar component for site navigation",
+  "version": "1.0.0",
+  "category": "ui",
+  "tags": ["navbar", "header", "navigation"],
+  "props": [
+    { "name": "variant", "type": "string", "values": ["default", "sticky", "fixed"], "default": "default" },
+    { "name": "items", "type": "array", "description": "Nav items" }
+  ],
+  "attributes": ["data-variant", "role"],
+  "accessibility": { "role": "banner" },
+  "examples": ["basic", "with-search", "sticky"]
+}

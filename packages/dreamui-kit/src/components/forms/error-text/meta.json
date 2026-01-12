@@ -1,0 +1,13 @@
+{
+  "name": "error-text",
+  "description": "Error message for form inputs",
+  "version": "1.0.0",
+  "category": "forms",
+  "tags": ["error", "form", "text", "validation"],
+  "props": [
+    { "name": "id", "type": "string", "description": "Associated input ID" }
+  ],
+  "attributes": ["id"],
+  "accessibility": { "aria-describedby": "id", "aria-live": "polite" },
+  "examples": ["basic", "with-field"]
+}

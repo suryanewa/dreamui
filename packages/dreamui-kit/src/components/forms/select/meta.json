@@ -1,0 +1,16 @@
+{
+  "name": "select",
+  "description": "Select dropdown component",
+  "version": "1.0.0",
+  "category": "forms",
+  "tags": ["select", "dropdown", "form", "combobox"],
+  "props": [
+    { "name": "options", "type": "array", "description": "Array of {value, label} objects" },
+    { "name": "placeholder", "type": "string", "default": "Select..." },
+    { "name": "disabled", "type": "boolean", "default": false },
+    { "name": "size", "type": "string", "values": ["sm", "md", "lg"], "default": "md" }
+  ],
+  "attributes": ["data-size", "disabled"],
+  "accessibility": { "role": "combobox", "aria-expanded": "isOpen" },
+  "examples": ["basic", "sizes", "disabled"]
+}

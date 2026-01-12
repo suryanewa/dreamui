@@ -1,0 +1,16 @@
+{
+  "name": "grid",
+  "description": "Grid component for 2D layouts",
+  "version": "1.0.0",
+  "category": "layout",
+  "tags": ["grid", "layout", "columns"],
+  "props": [
+    { "name": "columns", "type": "string", "description": "Column count or responsive" },
+    { "name": "gap", "type": "string", "values": ["1", "2", "3", "4", "6", "8"], "default": "4" },
+    { "name": "row-gap", "type": "string" },
+    { "name": "min", "type": "string", "description": "Min column width" }
+  ],
+  "attributes": ["data-columns", "data-gap", "data-row-gap", "data-min"],
+  "accessibility": {},
+  "examples": ["auto", "fixed", "responsive"]
+}

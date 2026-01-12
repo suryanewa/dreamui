@@ -1,0 +1,16 @@
+{
+  "name": "chip",
+  "description": "A chip component for tags, selections, and categories",
+  "version": "1.0.0",
+  "category": "ui",
+  "tags": ["tag", "selection", "filter"],
+  "props": [
+    { "name": "variant", "type": "string", "values": ["default", "outlined", "filled"], "default": "default" },
+    { "name": "selectable", "type": "boolean", "default": false },
+    { "name": "removable", "type": "boolean", "default": false },
+    { "name": "selected", "type": "boolean", "default": false }
+  ],
+  "attributes": ["data-variant", "data-selected", "data-removable"],
+  "accessibility": { "role": "button", "aria-pressed": "selected" },
+  "examples": ["selectable", "removable", "selected"]
+}

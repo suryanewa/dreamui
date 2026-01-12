@@ -1,0 +1,32 @@
+.textarea {
+  width: 100%;
+  background: var(--color-bg-tertiary);
+  border: var(--border-width-thin) solid var(--color-border-primary);
+  border-radius: var(--radius-lg);
+  color: var(--color-fg-primary);
+  font-family: var(--font-family-sans);
+  padding: var(--space-2) var(--space-3);
+  font-size: var(--font-size-base);
+  resize: vertical;
+  transition: var(--transition-fast);
+}
+
+.textarea:focus {
+  outline: none;
+  border-color: var(--color-fg-accent);
+  box-shadow: var(--focus-ring);
+}
+
+.textarea:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.textarea::placeholder {
+  color: var(--color-fg-tertiary);
+}
+
+.textarea[data-resize="none"] { resize: none; }
+.textarea[data-resize="vertical"] { resize: vertical; }
+.textarea[data-resize="horizontal"] { resize: horizontal; }
+.textarea[data-resize="both"] { resize: both; }

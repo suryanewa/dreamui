@@ -1,0 +1,17 @@
+{
+  "name": "radio",
+  "description": "Radio input component",
+  "version": "1.0.0",
+  "category": "forms",
+  "tags": ["radio", "input", "form", "selection"],
+  "props": [
+    { "name": "name", "type": "string", "required": true },
+    { "name": "value", "type": "string", "required": true },
+    { "name": "checked", "type": "boolean", "default": false },
+    { "name": "disabled", "type": "boolean", "default": false },
+    { "name": "label", "type": "string" }
+  ],
+  "attributes": ["name", "value", "checked", "disabled"],
+  "accessibility": { "role": "radio", "aria-checked": "checked" },
+  "examples": ["basic", "group", "disabled"]
+}

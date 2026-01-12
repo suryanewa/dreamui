@@ -1,0 +1,53 @@
+{
+  "name": "button",
+  "description": "A versatile button component for triggering actions",
+  "version": "1.0.0",
+  "category": "ui",
+  "tags": ["action", "interactive", "primary"],
+  "props": [
+    {
+      "name": "variant",
+      "type": "string",
+      "values": ["primary", "secondary", "ghost", "danger", "success"],
+      "default": "primary",
+      "description": "Visual style variant"
+    },
+    {
+      "name": "size",
+      "type": "string", 
+      "values": ["sm", "md", "lg"],
+      "default": "md",
+      "description": "Button size"
+    },
+    {
+      "name": "disabled",
+      "type": "boolean",
+      "default": false,
+      "description": "Disables the button"
+    },
+    {
+      "name": "loading",
+      "type": "boolean",
+      "default": false,
+      "description": "Shows loading state"
+    },
+    {
+      "name": "full-width",
+      "type": "boolean",
+      "default": false,
+      "description": "Makes button full width"
+    }
+  ],
+  "attributes": ["data-variant", "data-size", "disabled", "loading", "data-loading"],
+  "accessibility": {
+    "role": "button",
+    "keyboard": ["Enter", "Space"],
+    "aria": {
+      "disabled": "disabled",
+      "loading": "aria-busy"
+    }
+  },
+  "cssVariables": ["--button-bg", "--button-fg", "--button-radius"],
+  "dependencies": [],
+  "examples": ["primary", "secondary", "danger", "ghost", "loading", "disabled"]
+}

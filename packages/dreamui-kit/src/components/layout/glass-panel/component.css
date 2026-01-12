@@ -1,0 +1,23 @@
+.glass-panel {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-xl);
+}
+
+.glass-panel[data-intensity="low"] {
+  backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.03);
+  border-color: rgba(255, 255, 255, 0.05);
+}
+
+.glass-panel[data-intensity="high"] {
+  backdrop-filter: blur(32px);
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.glass-panel[data-padding="sm"] { padding: var(--space-3); }
+.glass-panel[data-padding="md"] { padding: var(--space-4); }
+.glass-panel[data-padding="lg"] { padding: var(--space-6); }

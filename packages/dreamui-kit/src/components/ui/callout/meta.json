@@ -1,0 +1,14 @@
+{
+  "name": "callout",
+  "description": "Callout component for displaying important messages",
+  "version": "1.0.0",
+  "category": "ui",
+  "tags": ["alert", "message", "notification"],
+  "props": [
+    { "name": "variant", "type": "string", "values": ["info", "success", "warning", "error"], "default": "info" },
+    { "name": "title", "type": "string" }
+  ],
+  "attributes": ["data-variant"],
+  "accessibility": { "role": "alert" },
+  "examples": ["info", "success", "warning", "error"]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "gradient-background",
+  "description": "Gradient background component",
+  "version": "1.0.0",
+  "category": "layout",
+  "tags": ["background", "gradient", "gradient"],
+  "props": [
+    { "name": "variant", "type": "string", "values": ["subtle", "vibrant", "sunset", "ocean"], "default": "subtle" },
+    { "name": "animated", "type": "boolean", "default": true }
+  ],
+  "attributes": ["data-variant", "data-animated"],
+  "accessibility": {},
+  "examples": ["subtle", "vibrant", "animated"]
+}

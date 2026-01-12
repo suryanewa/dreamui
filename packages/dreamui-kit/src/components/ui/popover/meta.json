@@ -1,0 +1,14 @@
+{
+  "name": "popover",
+  "description": "Popover component for displaying content in a floating panel",
+  "version": "1.0.0",
+  "category": "ui",
+  "tags": ["popover", "floating", "panel"],
+  "props": [
+    { "name": "position", "type": "string", "values": ["top", "bottom", "left", "right"], "default": "bottom" },
+    { "name": "title", "type": "string" }
+  ],
+  "attributes": ["data-position", "role", "aria-expanded"],
+  "accessibility": { "role": "dialog", "aria-expanded": "isOpen" },
+  "examples": ["basic", "with-header", "nested"]
+}

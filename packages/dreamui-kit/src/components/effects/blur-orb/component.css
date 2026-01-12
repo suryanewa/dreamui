@@ -1,0 +1,25 @@
+.blur-orb {
+  position: absolute;
+  width: var(--size, 300px);
+  height: var(--size, 300px);
+  background: var(--color, var(--color-fg-accent));
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.3;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.blur-orb[data-animated="true"] {
+  animation: float 6s ease-in-out infinite;
+}
+
+.blur-orb[data-animated="true"]:nth-child(2n) {
+  animation-delay: -3s;
+  animation-direction: reverse;
+}
+
+@keyframes float {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(20px, -20px) scale(1.1); }
+}

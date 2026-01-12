@@ -1,0 +1,15 @@
+{
+  "name": "blur-orb",
+  "description": "Decorative blur orb effect",
+  "version": "1.0.0",
+  "category": "effects",
+  "tags": ["blur", "orb", "effect", "background", "gradient"],
+  "props": [
+    { "name": "color", "type": "string", "default": "var(--color-fg-accent)" },
+    { "name": "size", "type": "string", "default": "300px" },
+    { "name": "animated", "type": "boolean", "default": true }
+  ],
+  "attributes": ["data-color", "data-size", "data-animated"],
+  "accessibility": {},
+  "examples": ["static", "floating", "multiple"]
+}

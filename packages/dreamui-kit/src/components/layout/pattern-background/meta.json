@@ -1,0 +1,15 @@
+{
+  "name": "pattern-background",
+  "description": "Pattern background component",
+  "version": "1.0.0",
+  "category": "layout",
+  "tags": ["background", "pattern", "texture"],
+  "props": [
+    { "name": "variant", "type": "string", "values": ["grid", "dots", "diagonal", "hexagon"], "default": "grid" },
+    { "name": "color", "type": "string", "default": "rgba(139, 92, 246, 0.05)" },
+    { "name": "size", "type": "string", "default": "40px" }
+  ],
+  "attributes": ["data-variant", "data-color", "data-size"],
+  "accessibility": {},
+  "examples": ["grid", "dots", "diagonal"]
+}

@@ -1,0 +1,275 @@
+/**
+ * DreamUI Theme System
+ * 
+ * Defines light/dark themes and color palette variations.
+ * All themes inherit from the base tokens and override as needed.
+ */
+
+/* ============================================
+   LIGHT THEME
+   ============================================ */
+
+[data-theme="light"],
+:root:not([data-theme="dark"]) {
+  /* Override semantic tokens for light mode */
+  --color-fg-primary: #0f0f0f;
+  --color-fg-secondary: rgba(15, 15, 15, 0.7);
+  --color-fg-tertiary: rgba(15, 15, 15, 0.5);
+  --color-fg-disabled: rgba(15, 15, 15, 0.3);
+  --color-fg-inverse: #ffffff;
+  --color-fg-accent: #7c3aed;
+  
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #fafafa;
+  --color-bg-tertiary: #f5f5f5;
+  --color-bg-elevated: #ffffff;
+  --color-bg-inverse: #0f0f0f;
+  --color-bg-accent: rgba(124, 58, 237, 0.1);
+  
+  --color-border-primary: rgba(15, 15, 15, 0.1);
+  --color-border-secondary: rgba(15, 15, 15, 0.05);
+  --color-border-focus: #7c3aed;
+  
+  /* Adjust shadows for light mode */
+  --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+}
+
+/* ============================================
+   DARK THEME (DEFAULT)
+   ============================================ */
+
+[data-theme="dark"] {
+  /* Uses the default CSS variables defined in tokens.css */
+  /* No overrides needed as :root is the dark theme base */
+}
+
+/* ============================================
+   SYSTEM PREFERENCE
+   ============================================ */
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    /* Light mode is already handled above */
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    /* Dark mode is the default */
+  }
+}
+
+/* ============================================
+   HIGH CONTRAST MODE
+   ============================================ */
+
+@media (prefers-contrast: high) {
+  :root {
+    --color-border-primary: currentColor;
+    --color-border-width-base: 3px;
+    --focus-ring-width: 3px;
+    --focus-ring-offset: 3px;
+  }
+}
+
+/* ============================================
+   REDUCED MOTION
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-75: 0ms;
+    --duration-100: 0ms;
+    --duration-150: 0ms;
+    --duration-200: 0ms;
+    --duration-300: 0ms;
+    --duration-400: 0ms;
+    --duration-500: 0ms;
+    --duration-600: 0ms;
+    --duration-700: 0ms;
+    --duration-800: 0ms;
+    --duration-900: 0ms;
+    --duration-1000: 0ms;
+    --duration-1500: 0ms;
+    --duration-2000: 0ms;
+    --duration-3000: 0ms;
+    
+    --animate-fade-in: none;
+    --animate-fade-out: none;
+    --animate-slide-up: none;
+    --animate-slide-down: none;
+    --animate-scale-in: none;
+    --animate-spin: none;
+    --animate-pulse: none;
+    --animate-bounce: none;
+  }
+}
+
+/* ============================================
+   THEME SWITCHER TRANSITION
+   ============================================ */
+
+[data-theme],
+:root {
+  transition: background-color var(--duration-300) var(--ease-out),
+              color var(--duration-300) var(--ease-out),
+              border-color var(--duration-300) var(--ease-out);
+}
+
+/* Disable transitions for instant theme switching */
+[data-theme="auto"] {
+  transition: none;
+}
+
+/* ============================================
+   COLOR PALETTE VARIANTS
+   ============================================ */
+
+/* Rose */
+[data-theme="light"][data-palette="rose"],
+:root[data-palette="rose"] {
+  --color-fg-accent: #e11d48;
+  --color-bg-accent: rgba(225, 29, 72, 0.1);
+  --color-border-focus: #e11d48;
+  --shadow-glow-sm: 0 0 20px rgba(225, 29, 72, 0.15);
+  --shadow-glow-md: 0 0 40px rgba(225, 29, 72, 0.2);
+}
+
+[data-theme="dark"][data-palette="rose"] {
+  --color-fg-accent: #fb7185;
+  --color-bg-accent: rgba(251, 113, 133, 0.1);
+  --color-border-focus: #fb7185;
+  --shadow-glow-sm: 0 0 20px rgba(251, 113, 133, 0.15);
+  --shadow-glow-md: 0 0 40px rgba(251, 113, 133, 0.2);
+}
+
+/* Orange */
+[data-theme="light"][data-palette="orange"],
+:root[data-palette="orange"] {
+  --color-fg-accent: #ea580c;
+  --color-bg-accent: rgba(234, 88, 12, 0.1);
+  --color-border-focus: #ea580c;
+  --shadow-glow-sm: 0 0 20px rgba(234, 88, 12, 0.15);
+  --shadow-glow-md: 0 0 40px rgba(234, 88, 12, 0.2);
+}
+
+[data-theme="dark"][data-palette="orange"] {
+  --color-fg-accent: #fb923c;
+  --color-bg-accent: rgba(251, 146, 60, 0.1);
+  --color-border-focus: #fb923c;
+  --shadow-glow-sm: 0 0 20px rgba(251, 146, 60, 0.15);
+  --shadow-glow-md: 0 0 40px rgba(251, 146, 60, 0.2);
+}
+
+/* Amber */
+[data-theme="light"][data-palette="amber"],
+:root[data-palette="amber"] {
+  --color-fg-accent: #d97706;
+  --color-bg-accent: rgba(217, 119, 6, 0.1);
+  --color-border-focus: #d97706;
+  --shadow-glow-sm: 0 0 20px rgba(217, 119, 6, 0.15);
+  --shadow-glow-md: 0 0 40px rgba(217, 119, 6, 0.2);
+}
+
+[data-theme="dark"][data-palette="amber"] {
+  --color-fg-accent: #fbbf24;
+  --color-bg-accent: rgba(251, 191, 36, 0.1);
+  --color-border-focus: #fbbf24;
+  --shadow-glow-sm: 0 0 20px rgba(251, 191, 36, 0.15);
+  --shadow-glow-md: 0 0 40px rgba(251, 191, 36, 0.2);
+}
+
+/* Emerald */
+[data-theme="light"][data-palette="emerald"],
+:root[data-palette="emerald"] {
+  --color-fg-accent: #059669;
+  --color-bg-accent: rgba(5, 150, 105, 0.1);
+  --color-border-focus: #059669;
+  --shadow-glow-sm: 0 0 20px rgba(5, 150, 105, 0.15);
+  --shadow-glow-md: 0 0 40px rgba(5, 150, 105, 0.2);
+}
+
+[data-theme="dark"][data-palette="emerald"] {
+  --color-fg-accent: #34d399;
+  --color-bg-accent: rgba(52, 211, 153, 0.1);
+  --color-border-focus: #34d399;
+  --shadow-glow-sm: 0 0 20px rgba(52, 211, 153, 0.15);
+  --shadow-glow-md: 0 0 40px rgba(52, 211, 153, 0.2);
+}
+
+/* Sky */
+[data-theme="light"][data-palette="sky"],
+:root[data-palette="sky"] {
+  --color-fg-accent: #0284c7;
+  --color-bg-accent: rgba(2, 132, 199, 0.1);
+  --color-border-focus: #0284c7;
+  --shadow-glow-sm: 0 0 20px rgba(2, 132, 199, 0.15);
+  --shadow-glow-md: 0 0 40px rgba(2, 132, 199, 0.2);
+}
+
+[data-theme="dark"][data-palette="sky"] {
+  --color-fg-accent: #38bdf8;
+  --color-bg-accent: rgba(56, 189, 248, 0.1);
+  --color-border-focus: #38bdf8;
+  --shadow-glow-sm: 0 0 20px rgba(56, 189, 248, 0.15);
+  --shadow-glow-md: 0 0 40px rgba(56, 189, 248, 0.2);
+}
+
+/* Violet */
+[data-theme="light"][data-palette="violet"],
+:root[data-palette="violet"] {
+  --color-fg-accent: #7c3aed;
+  --color-bg-accent: rgba(124, 58, 237, 0.1);
+  --color-border-focus: #7c3aed;
+  --shadow-glow-sm: 0 0 20px rgba(124, 58, 237, 0.15);
+  --shadow-glow-md: 0 0 40px rgba(124, 58, 237, 0.2);
+}
+
+[data-theme="dark"][data-palette="violet"] {
+  --color-fg-accent: #a78bfa;
+  --color-bg-accent: rgba(167, 139, 250, 0.1);
+  --color-border-focus: #a78bfa;
+  --shadow-glow-sm: 0 0 20px rgba(167, 139, 250, 0.15);
+  --shadow-glow-md: 0 0 40px rgba(167, 139, 250, 0.2);
+}
+
+/* Fuchsia */
+[data-theme="light"][data-palette="fuchsia"],
+:root[data-palette="fuchsia"] {
+  --color-fg-accent: #c026d3;
+  --color-bg-accent: rgba(192, 38, 211, 0.1);
+  --color-border-focus: #c026d3;
+  --shadow-glow-sm: 0 0 20px rgba(192, 38, 211, 0.15);
+  --shadow-glow-md: 0 0 40px rgba(192, 38, 211, 0.2);
+}
+
+[data-theme="dark"][data-palette="fuchsia"] {
+  --color-fg-accent: #e879f9;
+  --color-bg-accent: rgba(232, 121, 249, 0.1);
+  --color-border-focus: #e879f9;
+  --shadow-glow-sm: 0 0 20px rgba(232, 121, 249, 0.15);
+  --shadow-glow-md: 0 0 40px rgba(232, 121, 249, 0.2);
+}
+
+/* Pink */
+[data-theme="light"][data-palette="pink"],
+:root[data-palette="pink"] {
+  --color-fg-accent: #db2777;
+  --color-bg-accent: rgba(219, 39, 119, 0.1);
+  --color-border-focus: #db2777;
+  --shadow-glow-sm: 0 0 20px rgba(219, 39, 119, 0.15);
+  --shadow-glow-md: 0 0 40px rgba(219, 39, 119, 0.2);
+}
+
+[data-theme="dark"][data-palette="pink"] {
+  --color-fg-accent: #f472b6;
+  --color-bg-accent: rgba(244, 114, 182, 0.1);
+  --color-border-focus: #f472b6;
+  --shadow-glow-sm: 0 0 20px rgba(244, 114, 182, 0.15);
+  --shadow-glow-md: 0 0 40px rgba(244, 114, 182, 0.2);
+}

@@ -1,0 +1,39 @@
+.shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.05) 25%,
+    rgba(255, 255, 255, 0.1) 50%,
+    rgba(255, 255, 255, 0.05) 75%,
+    transparent 100%
+  );
+  animation: shimmer 2s infinite;
+}
+
+.shimmer[data-direction="right-left"]::after {
+  background: linear-gradient(
+    270deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.05) 25%,
+    rgba(255, 255, 255, 0.1) 50%,
+    rgba(255, 255, 255, 0.05) 75%,
+    transparent 100%
+  );
+  animation-direction: reverse;
+}
+
+.shimmer[data-speed="slow"]::after { animation-duration: 3s; }
+.shimmer[data-speed="fast"]::after { animation-duration: 1s; }
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}

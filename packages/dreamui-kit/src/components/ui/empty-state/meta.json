@@ -1,0 +1,14 @@
+{
+  "name": "empty-state",
+  "description": "Empty state component for when content is missing",
+  "version": "1.0.0",
+  "category": "ui",
+  "tags": ["empty", "state", "placeholder"],
+  "props": [
+    { "name": "title", "type": "string" },
+    { "name": "description", "type": "string" },
+    { "name": "action", "type": "string", "description": "Action button text" }
+  ],
+  "accessibility": { "role": "status" },
+  "examples": ["basic", "with-icon", "with-action"]
+}

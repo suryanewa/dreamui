@@ -1,0 +1,14 @@
+{
+  "name": "shimmer",
+  "description": "Shimmer loading effect",
+  "version": "1.0.0",
+  "category": "effects",
+  "tags": ["shimmer", "loading", "effect", "skeleton"],
+  "props": [
+    { "name": "direction", "type": "string", "values": ["left-right", "right-left"], "default": "left-right" },
+    { "name": "speed", "type": "string", "values": ["slow", "normal", "fast"], "default": "normal" }
+  ],
+  "attributes": ["data-direction", "data-speed"],
+  "accessibility": {},
+  "examples": ["basic", "slow", "bidirectional"]
+}

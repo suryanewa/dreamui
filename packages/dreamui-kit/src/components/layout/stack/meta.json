@@ -1,0 +1,16 @@
+{
+  "name": "stack",
+  "description": "Stack component for vertical or horizontal layouts",
+  "version": "1.0.0",
+  "category": "layout",
+  "tags": ["stack", "flex", "layout", "spacing"],
+  "props": [
+    { "name": "direction", "type": "string", "values": ["vertical", "horizontal"], "default": "vertical" },
+    { "name": "gap", "type": "string", "values": ["1", "2", "3", "4", "6", "8"], "default": "4" },
+    { "name": "align", "type": "string", "values": ["start", "center", "end", "stretch"], "default": "stretch" },
+    { "name": "justify", "type": "string", "values": ["start", "center", "end", "between"], "default": "start" }
+  ],
+  "attributes": ["data-direction", "data-gap", "data-align", "data-justify"],
+  "accessibility": {},
+  "examples": ["vertical", "horizontal", "alignment"]
+}

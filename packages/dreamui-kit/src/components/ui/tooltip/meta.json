@@ -1,0 +1,14 @@
+{
+  "name": "tooltip",
+  "description": "Tooltip component for displaying contextual information on hover",
+  "version": "1.0.0",
+  "category": "ui",
+  "tags": ["tooltip", "hover", "information"],
+  "props": [
+    { "name": "position", "type": "string", "values": ["top", "bottom", "left", "right"], "default": "top" },
+    { "name": "content", "type": "string", "required": true }
+  ],
+  "attributes": ["data-position", "aria-describedby"],
+  "accessibility": { "role": "tooltip", "aria-describedby": "tooltip-id" },
+  "examples": ["positions", "with-delay", "interactive"]
+}

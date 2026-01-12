@@ -1,0 +1,15 @@
+{
+  "name": "label",
+  "description": "Form label component",
+  "version": "1.0.0",
+  "category": "forms",
+  "tags": ["label", "form", "text"],
+  "props": [
+    { "name": "for", "type": "string", "description": "Associated input ID" },
+    { "name": "required", "type": "boolean", "default": false },
+    { "name": "size", "type": "string", "values": ["sm", "md", "lg"], "default": "md" }
+  ],
+  "attributes": ["for", "data-required", "data-size"],
+  "accessibility": { "role": "label" },
+  "examples": ["basic", "required", "sizes"]
+}

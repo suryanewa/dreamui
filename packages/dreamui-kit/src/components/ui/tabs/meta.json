@@ -1,0 +1,14 @@
+{
+  "name": "tabs",
+  "description": "Tabs component for navigating between content panels",
+  "version": "1.0.0",
+  "category": "ui",
+  "tags": ["tabs", "navigation", "panel"],
+  "props": [
+    { "name": "variant", "type": "string", "values": ["default", "pills", "underline"], "default": "default" },
+    { "name": "items", "type": "array", "description": "Tab items" }
+  ],
+  "attributes": ["data-variant", "role", "aria-selected"],
+  "accessibility": { "role": "tablist", "aria-selected": "isSelected" },
+  "examples": ["default", "pills", "vertical"]
+}

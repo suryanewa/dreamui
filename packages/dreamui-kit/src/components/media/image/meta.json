@@ -1,0 +1,16 @@
+{
+  "name": "image",
+  "description": "Image component with lazy loading and optimization",
+  "version": "1.0.0",
+  "category": "media",
+  "tags": ["image", "img", "picture", "lazy"],
+  "props": [
+    { "name": "src", "type": "string", "required": true },
+    { "name": "alt", "type": "string", "required": true },
+    { "name": "lazy", "type": "boolean", "default": true },
+    { "name": "placeholder", "type": "string" }
+  ],
+  "attributes": ["src", "alt", "loading", "decoding"],
+  "accessibility": { "role": "img", "alt": "alt" },
+  "examples": ["basic", "lazy", "with-placeholder"]
+}

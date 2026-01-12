@@ -1,0 +1,15 @@
+{
+  "name": "banner",
+  "description": "Banner component for prominent messages",
+  "version": "1.0.0",
+  "category": "ui",
+  "tags": ["banner", "alert", "message"],
+  "props": [
+    { "name": "variant", "type": "string", "values": ["info", "success", "warning", "error"], "default": "info" },
+    { "name": "title", "type": "string" },
+    { "name": "dismissible", "type": "boolean", "default": false }
+  ],
+  "attributes": ["data-variant", "role"],
+  "accessibility": { "role": "alert" },
+  "examples": ["info", "warning", "with-action"]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "textarea",
+  "description": "Multi-line text input component",
+  "version": "1.0.0",
+  "category": "forms",
+  "tags": ["textarea", "text", "form", "multiline"],
+  "props": [
+    { "name": "placeholder", "type": "string" },
+    { "name": "rows", "type": "number", "default": 4 },
+    { "name": "resize", "type": "string", "values": ["none", "vertical", "horizontal", "both"], "default": "vertical" },
+    { "name": "disabled", "type": "boolean", "default": false }
+  ],
+  "attributes": ["placeholder", "rows", "data-resize", "disabled"],
+  "accessibility": { "role": "textbox", "aria-multiline": "true" },
+  "examples": ["basic", "resize", "auto-height"]
+}

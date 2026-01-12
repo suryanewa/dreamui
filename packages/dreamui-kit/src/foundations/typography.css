@@ -1,0 +1,453 @@
+/**
+ * DreamUI Typography System
+ * 
+ * Typography tokens and base styles for consistent text rendering.
+ */
+
+/* ============================================
+   BASE TYPOGRAPHY
+   ============================================ */
+
+html {
+  font-family: var(--font-family-sans);
+  font-size: 16px;
+  line-height: var(--line-height-normal);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-kerning: normal;
+  font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+}
+
+/* ============================================
+   HEADINGS
+   ============================================ */
+
+h1, .text-h1,
+h2, .text-h2,
+h3, .text-h3,
+h4, .text-h4,
+h5, .text-h5,
+h6, .text-h6 {
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  color: var(--color-fg-primary);
+}
+
+h1, .text-h1 {
+  font-size: var(--font-size-5xl);
+  letter-spacing: var(--letter-spacing-tight);
+  margin-top: 0;
+  margin-bottom: var(--space-4);
+}
+
+h2, .text-h2 {
+  font-size: var(--font-size-4xl);
+  letter-spacing: var(--letter-spacing-tight);
+  margin-top: var(--space-8);
+  margin-bottom: var(--space-4);
+}
+
+h3, .text-h3 {
+  font-size: var(--font-size-3xl);
+  margin-top: var(--space-6);
+  margin-bottom: var(--space-3);
+}
+
+h4, .text-h4 {
+  font-size: var(--space-5);
+  margin-top: var(--space-5);
+  margin-bottom: var(--space-2);
+}
+
+h5, .text-h5 {
+  font-size: var(--font-size-xl);
+  margin-top: var(--space-4);
+  margin-bottom: var(--space-2);
+}
+
+h6, .text-h6 {
+  font-size: var(--font-size-lg);
+  margin-top: var(--space-4);
+  margin-bottom: var(--space-1);
+}
+
+/* ============================================
+   PARAGRAPHS
+   ============================================ */
+
+p {
+  margin-top: 0;
+  margin-bottom: var(--space-4);
+  color: var(--color-fg-secondary);
+}
+
+p.lead {
+  font-size: var(--font-size-xl);
+  line-height: var(--line-height-relaxed);
+  color: var(--color-fg-secondary);
+}
+
+p.small {
+  font-size: var(--font-size-sm);
+}
+
+/* ============================================
+   TEXT STYLES
+   ============================================ */
+
+.text-primary {
+  color: var(--color-fg-primary);
+}
+
+.text-secondary {
+  color: var(--color-fg-secondary);
+}
+
+.text-tertiary {
+  color: var(--color-fg-tertiary);
+}
+
+.text-accent {
+  color: var(--color-fg-accent);
+}
+
+.text-error {
+  color: var(--color-error);
+}
+
+.text-success {
+  color: var(--color-success);
+}
+
+.text-warning {
+  color: var(--color-warning);
+}
+
+.text-info {
+  color: var(--color-info);
+}
+
+/* ============================================
+   TEXT TRANSFORMS
+   ============================================ */
+
+.text-uppercase {
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-wider);
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+/* ============================================
+   TEXT WEIGHTS
+   ============================================ */
+
+.font-normal {
+  font-weight: var(--font-weight-normal);
+}
+
+.font-medium {
+  font-weight: var(--font-weight-medium);
+}
+
+.font-semibold {
+  font-weight: var(--font-weight-semibold);
+}
+
+.font-bold {
+  font-weight: var(--font-weight-bold);
+}
+
+/* ============================================
+   TEXT SIZES
+   ============================================ */
+
+.text-xs {
+  font-size: var(--font-size-xs);
+}
+
+.text-sm {
+  font-size: var(--font-size-sm);
+}
+
+.text-base {
+  font-size: var(--font-size-base);
+}
+
+.text-lg {
+  font-size: var(--font-size-lg);
+}
+
+.text-xl {
+  font-size: var(--font-size-xl);
+}
+
+.text-2xl {
+  font-size: var(--font-size-2xl);
+}
+
+.text-3xl {
+  font-size: var(--font-size-3xl);
+}
+
+.text-4xl {
+  font-size: var(--font-size-4xl);
+}
+
+.text-5xl {
+  font-size: var(--font-size-5xl);
+}
+
+.text-6xl {
+  font-size: var(--font-size-6xl);
+}
+
+/* ============================================
+   LINE HEIGHTS
+   ============================================ */
+
+.leading-none {
+  line-height: var(--line-height-tight);
+}
+
+.leading-tight {
+  line-height: var(--line-height-snug);
+}
+
+.leading-normal {
+  line-height: var(--line-height-normal);
+}
+
+.leading-relaxed {
+  line-height: var(--line-height-relaxed);
+}
+
+.leading-loose {
+  line-height: var(--line-height-loose);
+}
+
+/* ============================================
+   LETTER SPACING
+   ============================================ */
+
+.tracking-tight {
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+.tracking-normal {
+  letter-spacing: var(--letter-spacing-normal);
+}
+
+.tracking-wide {
+  letter-spacing: var(--letter-spacing-wide);
+}
+
+.tracking-wider {
+  letter-spacing: var(--letter-spacing-wider);
+}
+
+/* ============================================
+   TEXT DECORATION
+   ============================================ */
+
+.underline {
+  text-decoration: underline;
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+.underline-offset-2 {
+  text-underline-offset: 2px;
+}
+
+.underline-offset-4 {
+  text-underline-offset: 4px;
+}
+
+/* ============================================
+   LISTS
+   ============================================ */
+
+ul, ol {
+  margin-top: 0;
+  margin-bottom: var(--space-4);
+  padding-left: var(--space-6);
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+  margin-top: var(--space-2);
+  margin-bottom: var(--space-2);
+}
+
+li {
+  margin-bottom: var(--space-1);
+  color: var(--color-fg-secondary);
+}
+
+.list-none {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.list-disc {
+  list-style-type: disc;
+}
+
+.list-decimal {
+  list-style-type: decimal;
+}
+
+/* ============================================
+   CODE
+   ============================================ */
+
+code {
+  font-family: var(--font-family-mono);
+  font-size: 0.875em;
+  padding: var(--space-1) var(--space-2);
+  background: var(--color-bg-tertiary);
+  border-radius: var(--radius-md);
+  color: var(--color-fg-accent);
+}
+
+pre {
+  font-family: var(--font-family-mono);
+  font-size: var(--font-size-sm);
+  padding: var(--space-4);
+  background: var(--color-bg-secondary);
+  border-radius: var(--radius-lg);
+  overflow-x: auto;
+  margin-bottom: var(--space-4);
+}
+
+pre code {
+  padding: 0;
+  background: transparent;
+  color: var(--color-fg-primary);
+}
+
+/* ============================================
+   QUOTES
+   ============================================ */
+
+blockquote {
+  margin: var(--space-4) 0;
+  padding-left: var(--space-4);
+  border-left: var(--border-width-base) solid var(--color-border-primary);
+  color: var(--color-fg-secondary);
+  font-style: italic;
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+blockquote cite {
+  display: block;
+  margin-top: var(--space-2);
+  font-size: var(--font-size-sm);
+  font-style: normal;
+  color: var(--color-fg-tertiary);
+}
+
+/* ============================================
+   HORIZONTAL RULE
+   ============================================ */
+
+hr {
+  border: none;
+  border-top: var(--border-width-thin) solid var(--color-border-primary);
+  margin: var(--space-6) 0;
+}
+
+/* ============================================
+   DISPLAY TEXT
+   ============================================ */
+
+.display-text {
+  font-family: var(--font-family-display);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+}
+
+.display-1 {
+  font-size: var(--font-size-7xl);
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+.display-2 {
+  font-size: var(--font-size-6xl);
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+.display-3 {
+  font-size: var(--font-size-5xl);
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+/* ============================================
+   TRUNCATION
+   ============================================ */
+
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.line-clamp-1 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-4 {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ============================================
+   SELECTION
+   ============================================ */
+
+::selection {
+  background: var(--color-brand-500);
+  color: white;
+}

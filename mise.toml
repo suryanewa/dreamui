@@ -1,0 +1,25 @@
+[env]
+# Default environment variables
+NODE_ENV = "development"
+
+[tools]
+node = "20"
+pnpm = "9"
+
+[tasks.dev]
+run = "pnpm dev"
+
+[tasks.build]
+run = "pnpm build"
+
+[tasks.lint]
+run = "pnpm lint"
+
+[tasks.test]
+run = "pnpm test"
+
+[tasks.install]
+run = "pnpm install"
+
+[tasks.clean]
+run = "rm -rf node_modules packages/*/node_modules apps/*/node_modules dist packages/*/dist apps/*/dist .next"

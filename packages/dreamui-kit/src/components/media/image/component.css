@@ -1,0 +1,19 @@
+.image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.image[data-loaded="false"] {
+  opacity: 0;
+  transition: opacity var(--duration-300);
+}
+
+.image[data-loaded="true"] {
+  opacity: 1;
+}
+
+.image__placeholder {
+  background: var(--color-bg-tertiary);
+  animation: pulse var(--duration-2000) ease-in-out infinite;
+}

@@ -1,0 +1,15 @@
+{
+  "name": "starfield-background",
+  "description": "Starfield background component",
+  "version": "1.0.0",
+  "category": "layout",
+  "tags": ["background", "stars", "space", "twinkle"],
+  "props": [
+    { "name": "count", "type": "number", "default": 100 },
+    { "name": "size", "type": "string", "values": ["small", "medium", "large"], "default": "medium" },
+    { "name": "animated", "type": "boolean", "default": true }
+  ],
+  "attributes": ["data-count", "data-size", "data-animated"],
+  "accessibility": {},
+  "examples": ["static", "animated", "dense"]
+}

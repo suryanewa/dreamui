@@ -1,0 +1,19 @@
+.meter {
+  width: 100%;
+  height: 8px;
+  background: var(--color-bg-tertiary);
+  border-radius: var(--radius-full);
+  position: relative;
+  overflow: hidden;
+}
+
+.meter__fill {
+  height: 100%;
+  background: var(--color-fg-accent);
+  border-radius: var(--radius-full);
+  transition: width var(--duration-300) var(--ease-out);
+}
+
+.meter__fill[data-low="true"] { background: var(--color-warning); }
+.meter__fill[data-high="true"] { background: var(--color-error); }
+.meter__fill[data-optimum="true"] { background: var(--color-success); }

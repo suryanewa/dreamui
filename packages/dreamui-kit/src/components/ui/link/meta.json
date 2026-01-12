@@ -1,0 +1,14 @@
+{
+  "name": "link",
+  "description": "A link component with various styles and interaction states",
+  "version": "1.0.0",
+  "category": "ui",
+  "tags": ["navigation", "anchor", "interactive"],
+  "props": [
+    { "name": "variant", "type": "string", "values": ["default", "subtle", "accent"], "default": "default" },
+    { "name": "underline", "type": "boolean", "default": true }
+  ],
+  "attributes": ["data-variant", "data-underline"],
+  "accessibility": { "role": "link" },
+  "examples": ["variants", "with-icon", "disabled"]
+}

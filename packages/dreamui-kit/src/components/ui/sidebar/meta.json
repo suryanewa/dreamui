@@ -1,0 +1,14 @@
+{
+  "name": "sidebar",
+  "description": "Sidebar component for secondary navigation",
+  "version": "1.0.0",
+  "category": "ui",
+  "tags": ["sidebar", "navigation", "aside"],
+  "props": [
+    { "name": "collapsed", "type": "boolean", "default": false },
+    { "name": "items", "type": "array", "description": "Sidebar items" }
+  ],
+  "attributes": ["data-collapsed", "role"],
+  "accessibility": { "role": "navigation", "aria-label": "sidebar" },
+  "examples": ["basic", "collapsed", "with-groups"]
+}

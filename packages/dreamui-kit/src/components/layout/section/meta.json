@@ -1,0 +1,14 @@
+{
+  "name": "section",
+  "description": "Section component for content sections",
+  "version": "1.0.0",
+  "category": "layout",
+  "tags": ["section", "block", "layout"],
+  "props": [
+    { "name": "size", "type": "string", "values": ["sm", "md", "lg", "xl"], "default": "md" },
+    { "name": "bordered", "type": "boolean", "default": false }
+  ],
+  "attributes": ["data-size", "data-bordered"],
+  "accessibility": { "role": "region" },
+  "examples": ["basic", "sizes", "bordered"]
+}

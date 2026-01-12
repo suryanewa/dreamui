@@ -1,0 +1,27 @@
+{
+  "name": "@dreamui/docs",
+  "version": "0.0.0",
+  "private": true,
+  "description": "DreamUI documentation site and component gallery",
+  "author": "DreamUI Team <developer@dreamui.dev>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "preview": "pnpm build && pnpm start"
+  },
+  "dependencies": {
+    "next": "^14.2.21",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "@dreamui/dreamui-kit": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@types/react": "^18.3.17",
+    "@types/react-dom": "^18.3.5",
+    "typescript": "^5.7.2"
+  }
+}

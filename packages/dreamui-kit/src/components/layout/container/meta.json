@@ -1,0 +1,14 @@
+{
+  "name": "container",
+  "description": "Container component for constraining content width",
+  "version": "1.0.0",
+  "category": "layout",
+  "tags": ["container", "width", "layout"],
+  "props": [
+    { "name": "size", "type": "string", "values": ["sm", "md", "lg", "xl", "2xl", "full"], "default": "lg" },
+    { "name": "padding", "type": "boolean", "default": true }
+  ],
+  "attributes": ["data-size", "data-padding"],
+  "accessibility": {},
+  "examples": ["sizes", "with-padding"]
+}

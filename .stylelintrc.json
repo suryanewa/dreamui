@@ -1,0 +1,37 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-recommended-scss",
+    "stylelint-config-prettier"
+  ],
+  "ignoreFiles": ["node_modules/", "dist/", "build/"],
+  "rules": {
+    "color-hex-case": "lower",
+    "color-hex-length": "short",
+    "selector-class-pattern": "^[a-z][a-z0-9]*(-[a-z0-9]+)*(__[a-z0-9]+(-[a-z0-9]+)*)?(--[a-z0-9]+(-[a-z0-9]+)*)?$",
+    "selector-id-pattern": "^[a-z][a-z0-9]*(-[a-z0-9]+)*$",
+    "custom-property-pattern": "^[a-z][a-z0-9]*(-[a-z0-9]+)*$",
+    "property-blacklist": ["composes", "compose-modules"],
+    "selector-pseudo-class-no-unknown": [
+      true,
+      {
+        "ignorePseudoClasses": ["global", "local"]
+      }
+    ],
+    "selector-pseudo-element-no-unknown": [
+      true,
+      {
+        "ignorePseudoElements": ["view-transition"]
+      }
+    ],
+    "media-type-no-deprecated": true,
+    "at-rule-no-deprecated": true,
+    "function-url-quotes": "always",
+    "font-family-name-quotes": "always-if-numbered",
+    "number-leading-zero": "always",
+    "unit-no-unknown": true,
+    "declaration-block-trailing-semicolon": "always",
+    "block-closing-brace-newline-before": "always",
+    "selector-list-comma-newline-after": "always"
+  }
+}

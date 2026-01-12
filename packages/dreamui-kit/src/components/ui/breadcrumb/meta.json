@@ -1,0 +1,14 @@
+{
+  "name": "breadcrumb",
+  "description": "Breadcrumb navigation for hierarchical content",
+  "version": "1.0.0",
+  "category": "ui",
+  "tags": ["breadcrumb", "navigation", "hierarchy"],
+  "props": [
+    { "name": "items", "type": "array", "description": "Breadcrumb items" },
+    { "name": "separator", "type": "string", "default": "/" }
+  ],
+  "attributes": ["aria-label"],
+  "accessibility": { "role": "navigation", "aria-label": "breadcrumb" },
+  "examples": ["basic", "with-icons", "truncated"]
+}

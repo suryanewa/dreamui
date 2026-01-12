@@ -1,0 +1,39 @@
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    var(--color-bg-tertiary) 25%,
+    var(--color-bg-elevated) 50%,
+    var(--color-bg-tertiary) 75%
+  );
+  background-size: 200% 100%;
+  animation: skeleton-loading 1.5s ease-in-out infinite;
+}
+
+.skeleton[data-variant="text"] {
+  height: 1em;
+  border-radius: var(--radius-sm);
+}
+
+.skeleton[data-variant="circular"] {
+  border-radius: 50%;
+}
+
+.skeleton[data-variant="rectangular"] {
+  border-radius: var(--radius-md);
+}
+
+.skeleton[data-variant="heading"] {
+  height: 1.5em;
+  border-radius: var(--radius-sm);
+  width: 60%;
+}
+
+.skeleton[data-animated="false"] {
+  animation: none;
+  background: var(--color-bg-tertiary);
+}
+
+@keyframes skeleton-loading {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}

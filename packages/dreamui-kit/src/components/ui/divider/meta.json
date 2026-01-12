@@ -1,0 +1,14 @@
+{
+  "name": "divider",
+  "description": "A divider component for separating content",
+  "version": "1.0.0",
+  "category": "ui",
+  "tags": ["separator", "hr", "line"],
+  "props": [
+    { "name": "orientation", "type": "string", "values": ["horizontal", "vertical"], "default": "horizontal" },
+    { "name": "spacing", "type": "string", "values": ["sm", "md", "lg"], "default": "md" }
+  ],
+  "attributes": ["data-orientation"],
+  "accessibility": { "role": "separator" },
+  "examples": ["horizontal", "vertical", "with-text"]
+}

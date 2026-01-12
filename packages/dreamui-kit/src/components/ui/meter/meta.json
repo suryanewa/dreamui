@@ -1,0 +1,18 @@
+{
+  "name": "meter",
+  "description": "Meter/gauge component for displaying values within a range",
+  "version": "1.0.0",
+  "category": "ui",
+  "tags": ["meter", "gauge", "indicator"],
+  "props": [
+    { "name": "value", "type": "number", "description": "Current value" },
+    { "name": "min", "type": "number", "default": 0 },
+    { "name": "max", "type": "number", "default": 100 },
+    { "name": "low", "type": "number", "description": "Low threshold" },
+    { "name": "high", "type": "number", "description": "High threshold" },
+    { "name": "optimum", "type": "number", "description": "Optimal value" }
+  ],
+  "attributes": ["value", "min", "max", "low", "high", "optimum"],
+  "accessibility": { "role": "meter", "aria-valuenow": "value" },
+  "examples": ["basic", "with-labels", "battery"]
+}

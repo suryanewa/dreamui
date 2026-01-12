@@ -1,0 +1,15 @@
+{
+  "name": "code-block",
+  "description": "Code block component for displaying code snippets",
+  "version": "1.0.0",
+  "category": "ui",
+  "tags": ["code", "syntax", "pre", "snippet"],
+  "props": [
+    { "name": "language", "type": "string", "description": "Programming language" },
+    { "name": "show-line-numbers", "type": "boolean", "default": false },
+    { "name": "max-height", "type": "string", "description": "Max height of code block" }
+  ],
+  "attributes": ["data-language", "data-line-numbers"],
+  "accessibility": { "role": "region", "aria-label": "code block" },
+  "examples": ["basic", "with-line-numbers", "with-copy"]
+}

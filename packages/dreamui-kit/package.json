@@ -1,0 +1,65 @@
+{
+  "name": "@dreamui/dreamui-kit",
+  "version": "0.0.0",
+  "private": false,
+  "description": "Vanilla UI component kit for DreamUI - the canonical source of truth",
+  "author": "DreamUI Team <developer@dreamui.dev>",
+  "license": "MIT",
+  "keywords": [
+    "ui",
+    "components",
+    "vanilla",
+    "css",
+    "design-system"
+  ],
+  "homepage": "https://dreamui.dev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dreamui/dreamui.git",
+    "directory": "packages/dreamui-kit"
+  },
+  "bugs": {
+    "url": "https://github.com/dreamui/dreamui/issues"
+  },
+  "type": "module",
+  "main": "./dist/dreamui-kit.css",
+  "module": "./dist/dreamui-kit.esm.js",
+  "types": "./dist/dreamui-kit.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/dreamui-kit.esm.js",
+      "require": "./dist/dreamui-kit.js",
+      "types": "./dist/dreamui-kit.d.ts"
+    },
+    "./foundations": {
+      "import": "./dist/foundations.css",
+      "require": "./dist/foundations.js",
+      "types": "./dist/foundations.d.ts"
+    },
+    "./components/*": {
+      "import": "./dist/components/*.js",
+      "require": "./dist/components/*.js",
+      "types": "./dist/components/*.d.ts"
+    }
+  },
+  "files": [
+    "dist/",
+    "src/"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext .js,.ts,.css",
+    "format": "prettier --write .",
+    "test": "vitest",
+    "check": "tsc --noEmit && eslint . --ext .js,.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "sass": "^1.83.0",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.3",
+    "vitest": "^2.1.8"
+  }
+}

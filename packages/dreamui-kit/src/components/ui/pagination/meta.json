@@ -1,0 +1,16 @@
+{
+  "name": "pagination",
+  "description": "Pagination component for navigating through paginated content",
+  "version": "1.0.0",
+  "category": "ui",
+  "tags": ["pagination", "pager", "navigation"],
+  "props": [
+    { "name": "current", "type": "number", "default": 1 },
+    { "name": "total", "type": "number", "default": 10 },
+    { "name": "siblings", "type": "number", "default": 1 },
+    { "name": "boundaries", "type": "number", "default": 1 }
+  ],
+  "attributes": ["aria-current"],
+  "accessibility": { "role": "navigation", "aria-label": "pagination" },
+  "examples": ["basic", "with-summary", "sizes"]
+}

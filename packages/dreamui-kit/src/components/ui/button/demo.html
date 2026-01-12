@@ -1,0 +1,131 @@
+<!-- Button Demo - Primary Examples -->
+
+<!-- Primary Buttons -->
+<button class="btn" data-variant="primary">Primary Button</button>
+<button class="btn" data-variant="primary" data-size="sm">Small</button>
+<button class="btn" data-variant="primary" data-size="lg">Large</button>
+
+<!-- Secondary Buttons -->
+<button class="btn" data-variant="secondary">Secondary</button>
+<button class="btn" data-variant="secondary" data-size="sm">Small</button>
+<button class="btn" data-variant="secondary" data-size="lg">Large</button>
+
+<!-- Ghost Buttons -->
+<button class="btn" data-variant="ghost">Ghost Button</button>
+<button class="btn" data-variant="ghost" data-size="sm">Small</button>
+
+<!-- Danger and Success -->
+<button class="btn" data-variant="danger">Danger</button>
+<button class="btn" data-variant="success">Success</button>
+
+<!-- Loading State -->
+<button class="btn" data-variant="primary" data-loading="true">Loading...</button>
+<button class="btn" data-variant="secondary" data-loading="true">Processing</button>
+
+<!-- Disabled State -->
+<button class="btn" data-variant="primary" disabled>Disabled</button>
+<button class="btn" data-variant="secondary" disabled>Disabled</button>
+
+<!-- Full Width -->
+<button class="btn" data-variant="primary" data-full-width="true">Full Width Button</button>
+
+<!-- Icon Button -->
+<button class="btn btn--icon" data-variant="primary" aria-label="Add">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <line x1="12" y1="5" x2="12" y2="19"></line>
+    <line x1="5" y1="12" x2="19" y2="12"></line>
+  </svg>
+</button>
+
+<style>
+  .btn {
+    position: relative;
+    background: var(--color-fg-accent, #8b5cf6);
+    color: white;
+    padding: var(--space-2) var(--space-4);
+    border-radius: var(--radius-lg, 12px);
+    border: none;
+    font-family: var(--font-family-sans, sans-serif);
+    font-weight: var(--font-weight-medium, 500);
+    cursor: pointer;
+    transition: var(--transition-base, all 0.3s ease);
+  }
+  
+  .btn[data-variant="secondary"] {
+    background: var(--color-bg-tertiary, #252525);
+    color: var(--color-fg-primary, #fff);
+    border: 1px solid var(--color-border-primary, rgba(255,255,255,0.1));
+  }
+  
+  .btn[data-variant="ghost"] {
+    background: transparent;
+    color: var(--color-fg-primary, #fff);
+  }
+  
+  .btn[data-variant="danger"] {
+    background: var(--color-error, #ef4444);
+  }
+  
+  .btn[data-variant="success"] {
+    background: var(--color-success, #22c55e);
+  }
+  
+  .btn[data-size="sm"] {
+    padding: var(--space-1) var(--space-3);
+    font-size: var(--font-size-sm, 14px);
+  }
+  
+  .btn[data-size="lg"] {
+    padding: var(--space-3) var(--space-6);
+    font-size: var(--font-size-lg, 18px);
+  }
+  
+  .btn[data-loading="true"] {
+    position: relative;
+    color: transparent;
+    cursor: wait;
+  }
+  
+  .btn[data-loading="true"]::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 16px;
+    height: 16px;
+    margin: -8px 0 0 -8px;
+    border: 2px solid white;
+    border-right-color: transparent;
+    border-radius: 50%;
+    animation: spin 0.5s linear infinite;
+  }
+  
+  .btn:disabled,
+  .btn[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .btn[data-full-width="true"] {
+    width: 100%;
+  }
+  
+  .btn--icon {
+    padding: var(--space-2);
+    aspect-ratio: 1;
+  }
+  
+  .btn--icon svg {
+    display: block;
+  }
+  
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+  
+  /* Demo spacing */
+  * + .btn {
+    margin-left: var(--space-2);
+    margin-bottom: var(--space-2);
+  }
+</style>

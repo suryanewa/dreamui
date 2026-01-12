@@ -1,0 +1,14 @@
+{
+  "name": "spinner",
+  "description": "Animated spinner for loading states",
+  "version": "1.0.0",
+  "category": "ui",
+  "tags": ["loader", "loading", "indicator"],
+  "props": [
+    { "name": "size", "type": "string", "values": ["sm", "md", "lg"], "default": "md" },
+    { "name": "variant", "type": "string", "values": ["default", "primary"], "default": "default" }
+  ],
+  "attributes": ["data-size", "data-variant"],
+  "accessibility": { "role": "status", "aria-label": "loading" },
+  "examples": ["sizes", "variants", "inline"]
+}

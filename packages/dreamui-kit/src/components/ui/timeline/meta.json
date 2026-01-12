@@ -1,0 +1,14 @@
+{
+  "name": "timeline",
+  "description": "Timeline component for displaying chronological events",
+  "version": "1.0.0",
+  "category": "ui",
+  "tags": ["timeline", "history", "events"],
+  "props": [
+    { "name": "variant", "type": "string", "values": ["default", "connected", "alternating"], "default": "default" },
+    { "name": "items", "type": "array", "description": "Timeline events" }
+  ],
+  "attributes": ["data-variant"],
+  "accessibility": { "role": "list" },
+  "examples": ["basic", "connected", "with-images"]
+}

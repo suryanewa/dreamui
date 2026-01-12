@@ -1,0 +1,14 @@
+{
+  "name": "aspect-ratio",
+  "description": "Aspect ratio container for responsive media",
+  "version": "1.0.0",
+  "category": "media",
+  "tags": ["aspect-ratio", "container", "responsive"],
+  "props": [
+    { "name": "ratio", "type": "string", "default": "16/9" },
+    { "name": "fit", "type": "string", "values": ["cover", "contain", "fill"], "default": "cover" }
+  ],
+  "attributes": ["data-ratio", "data-fit"],
+  "accessibility": {},
+  "examples": ["16:9", "4:3", "1:1", "contain"]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "table",
+  "description": "Table component for displaying structured data",
+  "version": "1.0.0",
+  "category": "ui",
+  "tags": ["table", "data", "grid"],
+  "props": [
+    { "name": "variant", "type": "string", "values": ["default", "striped", "bordered"], "default": "default" },
+    { "name": "headers", "type": "array", "description": "Column headers" }
+  ],
+  "attributes": ["data-variant", "role"],
+  "accessibility": { "role": "table" },
+  "examples": ["basic", "striped", "sortable"]
+}

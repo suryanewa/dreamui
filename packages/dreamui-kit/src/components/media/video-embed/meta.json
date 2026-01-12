@@ -1,0 +1,16 @@
+{
+  "name": "video-embed",
+  "description": "Video embed component for iframes and HTML5 video",
+  "version": "1.0.0",
+  "category": "media",
+  "tags": ["video", "embed", "iframe", "youtube", "vimeo"],
+  "props": [
+    { "name": "src", "type": "string", "required": true },
+    { "name": "provider", "type": "string", "values": ["youtube", "vimeo", "html5"], "default": "html5" },
+    { "name": "autoplay", "type": "boolean", "default": false },
+    { "name": "controls", "type": "boolean", "default": true }
+  ],
+  "attributes": ["src", "allow"],
+  "accessibility": { "role": "region", "aria-label": "video player" },
+  "examples": ["youtube", "vimeo", "html5"]
+}

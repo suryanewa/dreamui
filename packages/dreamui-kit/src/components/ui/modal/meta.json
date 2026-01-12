@@ -1,0 +1,16 @@
+{
+  "name": "modal",
+  "description": "Modal dialog component for focused user interactions",
+  "version": "1.0.0",
+  "category": "ui",
+  "tags": ["modal", "dialog", "overlay"],
+  "props": [
+    { "name": "open", "type": "boolean", "default": false },
+    { "name": "title", "type": "string" },
+    { "name": "size", "type": "string", "values": ["sm", "md", "lg", "xl"], "default": "md" },
+    { "name": "closable", "type": "boolean", "default": true }
+  ],
+  "attributes": ["data-open", "data-size", "role", "aria-modal"],
+  "accessibility": { "role": "dialog", "aria-modal": "true", "aria-labelledby": "modal-title" },
+  "examples": ["basic", "with-form", "sizes", "alert"]
+}

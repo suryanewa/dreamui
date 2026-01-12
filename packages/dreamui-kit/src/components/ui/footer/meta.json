@@ -1,0 +1,13 @@
+{
+  "name": "footer",
+  "description": "Footer component for page or section footers",
+  "version": "1.0.0",
+  "category": "ui",
+  "tags": ["footer", "bottom", "copyright"],
+  "props": [
+    { "name": "variant", "type": "string", "values": ["default", "minimal", "columns"], "default": "default" }
+  ],
+  "attributes": ["data-variant", "role"],
+  "accessibility": { "role": "contentinfo" },
+  "examples": ["basic", "with-links", "columns"]
+}

@@ -1,0 +1,34 @@
+.aspect-ratio {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.aspect-ratio[data-ratio="1/1"] { aspect-ratio: 1; }
+.aspect-ratio[data-ratio="4/3"] { aspect-ratio: 4/3; }
+.aspect-ratio[data-ratio="16/9"] { aspect-ratio: 16/9; }
+.aspect-ratio[data-ratio="21/9"] { aspect-ratio: 21/9; }
+.aspect-ratio[data-ratio="3/2"] { aspect-ratio: 3/2; }
+.aspect-ratio[data-ratio="9/16"] { aspect-ratio: 9/16; }
+
+.aspect-ratio[data-fit="cover"] img,
+.aspect-ratio[data-fit="cover"] video {
+  object-fit: cover;
+}
+
+.aspect-ratio[data-fit="contain"] img,
+.aspect-ratio[data-fit="contain"] video {
+  object-fit: contain;
+}
+
+.aspect-ratio[data-fit="fill"] img,
+.aspect-ratio[data-fit="fill"] video {
+  object-fit: fill;
+}
+
+.aspect-ratio > * {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}

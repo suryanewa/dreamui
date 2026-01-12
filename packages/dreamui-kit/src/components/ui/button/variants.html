@@ -1,0 +1,164 @@
+<!-- Button Variants -->
+
+<h4>Variants</h4>
+
+<!-- Primary -->
+<button class="btn" data-variant="primary">Primary</button>
+
+<!-- Secondary -->
+<button class="btn" data-variant="secondary">Secondary</button>
+
+<!-- Ghost -->
+<button class="btn" data-variant="ghost">Ghost</button>
+
+<!-- Danger -->
+<button class="btn" data-variant="danger">Danger</button>
+
+<!-- Success -->
+<button class="btn" data-variant="success">Success</button>
+
+<h4>Sizes</h4>
+
+<!-- Small -->
+<button class="btn" data-variant="primary" data-size="sm">Small</button>
+
+<!-- Medium -->
+<button class="btn" data-variant="primary" data-size="md">Medium</button>
+
+<!-- Large -->
+<button class="btn" data-variant="primary" data-size="lg">Large</button>
+
+<h4>States</h4>
+
+<!-- Loading -->
+<button class="btn" data-variant="primary" data-loading="true">Loading</button>
+
+<!-- Disabled -->
+<button class="btn" data-variant="primary" disabled>Disabled</button>
+
+<!-- With Icon -->
+<button class="btn" data-variant="primary">
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <path d="M12 5v14M5 12h14"/>
+  </svg>
+  Add Item
+</button>
+
+<!-- Icon Only -->
+<button class="btn btn--icon" data-variant="primary" aria-label="Add">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <path d="M12 5v14M5 12h14"/>
+  </svg>
+</button>
+
+<h4>Full Width</h4>
+
+<button class="btn" data-variant="primary" data-full-width="true" style="max-width: 300px;">Full Width Button</button>
+
+<style>
+  .btn {
+    position: relative;
+    background: var(--color-fg-accent, #8b5cf6);
+    color: white;
+    padding: var(--space-2) var(--space-4);
+    border-radius: var(--radius-lg, 12px);
+    border: none;
+    font-family: var(--font-family-sans, sans-serif);
+    font-weight: var(--font-weight-medium, 500);
+    cursor: pointer;
+    transition: var(--transition-base, all 0.3s ease);
+  }
+  
+  .btn[data-variant="secondary"] {
+    background: var(--color-bg-tertiary, #252525);
+    color: var(--color-fg-primary, #fff);
+    border: 1px solid var(--color-border-primary, rgba(255,255,255,0.1));
+  }
+  
+  .btn[data-variant="ghost"] {
+    background: transparent;
+    color: var(--color-fg-primary, #fff);
+  }
+  
+  .btn[data-variant="danger"] {
+    background: var(--color-error, #ef4444);
+  }
+  
+  .btn[data-variant="success"] {
+    background: var(--color-success, #22c55e);
+  }
+  
+  .btn[data-size="sm"] {
+    padding: var(--space-1) var(--space-3);
+    font-size: var(--font-size-sm, 14px);
+  }
+  
+  .btn[data-size="md"] {
+    padding: var(--space-2) var(--space-4);
+  }
+  
+  .btn[data-size="lg"] {
+    padding: var(--space-3) var(--space-6);
+    font-size: var(--font-size-lg, 18px);
+  }
+  
+  .btn[data-loading="true"] {
+    position: relative;
+    color: transparent;
+    cursor: wait;
+  }
+  
+  .btn[data-loading="true"]::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 16px;
+    height: 16px;
+    margin: -8px 0 0 -8px;
+    border: 2px solid white;
+    border-right-color: transparent;
+    border-radius: 50%;
+    animation: spin 0.5s linear infinite;
+  }
+  
+  .btn:disabled,
+  .btn[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .btn[data-full-width="true"] {
+    width: 100%;
+  }
+  
+  .btn--icon {
+    padding: var(--space-2);
+    aspect-ratio: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .btn svg {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  h4 {
+    margin: var(--space-6) 0 var(--space-3) 0;
+    font-size: var(--font-size-sm);
+    color: var(--color-fg-tertiary, rgba(255,255,255,0.5));
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  
+  * + .btn {
+    margin-right: var(--space-2);
+    margin-bottom: var(--space-2);
+  }
+  
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+</style>

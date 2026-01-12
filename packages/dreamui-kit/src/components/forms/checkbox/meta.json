@@ -1,0 +1,16 @@
+{
+  "name": "checkbox",
+  "description": "Checkbox input component",
+  "version": "1.0.0",
+  "category": "forms",
+  "tags": ["checkbox", "input", "form", "toggle"],
+  "props": [
+    { "name": "checked", "type": "boolean", "default": false },
+    { "name": "disabled", "type": "boolean", "default": false },
+    { "name": "indeterminate", "type": "boolean", "default": false },
+    { "name": "label", "type": "string" }
+  ],
+  "attributes": ["checked", "disabled", "data-indeterminate"],
+  "accessibility": { "role": "checkbox", "aria-checked": "checked" },
+  "examples": ["basic", "checked", "indeterminate", "disabled"]
+}

@@ -1,0 +1,17 @@
+/* DreamUI Foundations Bundle
+ * 
+ * This file imports all foundations for a single CSS entry point.
+ * Import this file to get tokens, themes, typography, and utilities.
+ */
+
+/* Design Tokens - The single source of truth */
+@import './tokens.css';
+
+/* Theme System - Light/dark modes and palette variations */
+@import './themes.css';
+
+/* Typography System - Font styles, headings, text utilities */
+@import './typography.css';
+
+/* Utility Classes - Common patterns and helpers */
+@import '../utils.css';

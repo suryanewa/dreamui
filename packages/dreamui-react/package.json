@@ -1,0 +1,43 @@
+{
+  "name": "@dreamui/dreamui-react",
+  "version": "0.0.0",
+  "private": true,
+  "description": "React wrappers for DreamUI components",
+  "author": "DreamUI Team <developer@dreamui.dev>",
+  "license": "MIT",
+  "keywords": ["react", "ui", "components", "dreamui"],
+  "homepage": "https://dreamui.dev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dreamui/dreamui.git",
+    "directory": "packages/dreamui-react"
+  },
+  "bugs": {
+    "url": "https://github.com/dreamui/dreamui/issues"
+  },
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": ["dist/"],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext .ts,.tsx,.jsx,.js"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  },
+  "dependencies": {
+    "@dreamui/dreamui-kit": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.17",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.3"
+  }
+}

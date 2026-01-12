@@ -1,0 +1,16 @@
+{
+  "name": "skeleton",
+  "description": "Skeleton loader for displaying placeholder content",
+  "version": "1.0.0",
+  "category": "ui",
+  "tags": ["loader", "placeholder", "loading"],
+  "props": [
+    { "name": "variant", "type": "string", "values": ["text", "circular", "rectangular", "heading"], "default": "text" },
+    { "name": "width", "type": "string" },
+    { "name": "height", "type": "string" },
+    { "name": "animated", "type": "boolean", "default": true }
+  ],
+  "attributes": ["data-variant"],
+  "accessibility": { "role": "status", "aria-label": "loading" },
+  "examples": ["text", "circular", "rectangular", "card"]
+}

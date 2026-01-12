@@ -1,0 +1,3 @@
+0000000000000000000000000000000000000000 41ded943208adf2a74f40681a406cc06ef3c632e DreamUI Developer <developer@dreamui.dev> 1768176607 +0100	commit (initial): feat: Initial DreamUI monorepo setup
+41ded943208adf2a74f40681a406cc06ef3c632e 467b99f385f6a769704b34f10f2a866b245bfa4d DreamUI Developer <developer@dreamui.dev> 1768177296 +0100	commit: chore: Add mise configuration for dependency management
+467b99f385f6a769704b34f10f2a866b245bfa4d 51d43b06265b6bab8c2d6bd17fd2d67475b48cbc DreamUI Developer <developer@dreamui.dev> 1768177891 +0100	commit: Updated README

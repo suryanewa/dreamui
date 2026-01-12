@@ -1,0 +1,14 @@
+{
+  "name": "accordion",
+  "description": "Accordion component for collapsible content sections",
+  "version": "1.0.0",
+  "category": "ui",
+  "tags": ["accordion", "collapsible", "expandable"],
+  "props": [
+    { "name": "multiple", "type": "boolean", "default": false, "description": "Allow multiple open" },
+    { "name": "items", "type": "array", "description": "Accordion items" }
+  ],
+  "attributes": ["data-open", "aria-expanded"],
+  "accessibility": { "role": "region", "aria-expanded": "isOpen" },
+  "examples": ["basic", "multiple", "with-icons"]
+}

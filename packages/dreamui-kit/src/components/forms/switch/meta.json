@@ -1,0 +1,16 @@
+{
+  "name": "switch",
+  "description": "Toggle switch component",
+  "version": "1.0.0",
+  "category": "forms",
+  "tags": ["switch", "toggle", "form", "checkbox"],
+  "props": [
+    { "name": "checked", "type": "boolean", "default": false },
+    { "name": "disabled", "type": "boolean", "default": false },
+    { "name": "label", "type": "string" },
+    { "name": "size", "type": "string", "values": ["sm", "md", "lg"], "default": "md" }
+  ],
+  "attributes": ["checked", "disabled", "data-size"],
+  "accessibility": { "role": "switch", "aria-checked": "checked" },
+  "examples": ["basic", "sizes", "disabled", "with-label"]
+}

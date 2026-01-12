@@ -1,0 +1,13 @@
+{
+  "name": "helper-text",
+  "description": "Helper text for form inputs",
+  "version": "1.0.0",
+  "category": "forms",
+  "tags": ["helper", "hint", "form", "text"],
+  "props": [
+    { "name": "id", "type": "string", "description": "Associated input ID" }
+  ],
+  "attributes": ["id"],
+  "accessibility": { "aria-describedby": "id" },
+  "examples": ["basic", "with-input"]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "field",
+  "description": "Field wrapper with label, hint, error, and description",
+  "version": "1.0.0",
+  "category": "forms",
+  "tags": ["field", "wrapper", "label", "input"],
+  "props": [
+    { "name": "label", "type": "string", "required": true },
+    { "name": "hint", "type": "string", "description": "Helper text below input" },
+    { "name": "error", "type": "string", "description": "Error message" },
+    { "name": "description", "type": "string", "description": "Description above input" },
+    { "name": "required", "type": "boolean", "default": false },
+    { "name": "disabled", "type": "boolean", "default": false }
+  ],
+  "attributes": ["data-required", "data-error", "data-disabled"],
+  "accessibility": { "role": "group", "aria-describedby": "hint-id error-id" },
+  "examples": ["basic", "with-error", "with-hint", "disabled"]
+}

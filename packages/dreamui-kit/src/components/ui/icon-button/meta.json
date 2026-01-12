@@ -1,0 +1,15 @@
+{
+  "name": "icon-button",
+  "description": "A button designed for icons with consistent sizing and focus states",
+  "version": "1.0.0",
+  "category": "ui",
+  "tags": ["action", "icon", "interactive"],
+  "props": [
+    { "name": "size", "type": "string", "values": ["sm", "md", "lg"], "default": "md" },
+    { "name": "variant", "type": "string", "values": ["ghost", "soft", "solid"], "default": "ghost" },
+    { "name": "label", "type": "string", "required": true, "description": "Accessible label" }
+  ],
+  "attributes": ["data-size", "data-variant", "aria-label"],
+  "accessibility": { "role": "button", "keyboard": ["Enter", "Space"] },
+  "examples": ["sizes", "variants", "with-svg"]
+}

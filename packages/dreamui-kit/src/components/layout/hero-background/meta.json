@@ -1,0 +1,14 @@
+{
+  "name": "hero-background",
+  "description": "Hero background component",
+  "version": "1.0.0",
+  "category": "layout",
+  "tags": ["background", "hero", "pattern"],
+  "props": [
+    { "name": "variant", "type": "string", "values": ["gradient", "image", "mesh"], "default": "gradient" },
+    { "name": "overlay", "type": "boolean", "default": true }
+  ],
+  "attributes": ["data-variant"],
+  "accessibility": {},
+  "examples": ["gradient", "with-overlay"]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "drawer",
+  "description": "Drawer/Slide-out panel component",
+  "version": "1.0.0",
+  "category": "ui",
+  "tags": ["drawer", "sidebar", "slide-out"],
+  "props": [
+    { "name": "open", "type": "boolean", "default": false },
+    { "name": "position", "type": "string", "values": ["left", "right"], "default": "right" },
+    { "name": "size", "type": "string", "values": ["sm", "md", "lg", "full"], "default": "md" }
+  ],
+  "attributes": ["data-open", "data-position", "data-size"],
+  "accessibility": { "role": "dialog", "aria-modal": "false", "aria-label": "drawer" },
+  "examples": ["left", "right", "with-form"]
+}

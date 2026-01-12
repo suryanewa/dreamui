@@ -1,0 +1,55 @@
+.tabs {
+  display: flex;
+  flex-direction: column;
+}
+
+.tabs__list {
+  display: flex;
+  gap: var(--space-1);
+  border-bottom: 1px solid var(--color-border-primary);
+  padding-bottom: 0;
+}
+
+.tabs__tab {
+  padding: var(--space-3) var(--space-4);
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  color: var(--color-fg-tertiary);
+  transition: var(--transition-fast);
+  margin-bottom: -1px;
+}
+
+.tabs__tab:hover {
+  color: var(--color-fg-primary);
+}
+
+.tabs__tab[aria-selected="true"] {
+  color: var(--color-fg-accent);
+  border-bottom-color: var(--color-fg-accent);
+}
+
+.tabs__panel {
+  padding: var(--space-4) 0;
+  display: none;
+}
+
+.tabs__panel[data-active="true"] {
+  display: block;
+}
+
+.tabs[data-variant="pills"] .tabs__list {
+  border-bottom: none;
+  gap: var(--space-2);
+}
+
+.tabs[data-variant="pills"] .tabs__tab {
+  border-radius: var(--radius-md);
+  border: none;
+  margin-bottom: 0;
+}
+
+.tabs[data-variant="pills"] .tabs__tab[aria-selected="true"] {
+  background: var(--color-bg-tertiary);
+}

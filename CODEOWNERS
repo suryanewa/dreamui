@@ -1,0 +1,28 @@
+# CODEOWNERS
+
+The CODEOWNERS file defines who reviews pull requests by default.
+
+## Default Owners
+
+* @dreamui/maintainers
+
+## Component Owners
+
+Each component directory can have specific owners:
+
+```
+# UI Components
+/packages/dreamui-kit/src/components/ui/* @dreamui/ui-team
+# Form Components
+/packages/dreamui-kit/src/components/forms/* @dreamui/forms-team
+# Documentation
+/apps/docs/* @dreamui/docs-team
+```
+
+## Review Process
+
+1. At least one CODEOWNER must review and approve
+2. All CI checks must pass
+3. No unresolved conversations
+
+For more information, see [CONTRIBUTING.md](CONTRIBUTING.md).

@@ -1,0 +1,14 @@
+{
+  "name": "command-palette",
+  "description": "Command palette for quick actions and navigation",
+  "version": "1.0.0",
+  "category": "ui",
+  "tags": ["command", "palette", "search", "shortcut"],
+  "props": [
+    { "name": "open", "type": "boolean", "default": false },
+    { "name": "items", "type": "array", "description": "Command items" }
+  ],
+  "attributes": ["data-open", "role", "aria-expanded"],
+  "accessibility": { "role": "dialog", "aria-modal": "false", "aria-label": "command palette" },
+  "examples": ["basic", "with-groups", "keyboard"]
+}
